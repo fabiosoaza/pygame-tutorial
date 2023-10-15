@@ -1,0 +1,29 @@
+{
+  "packages": [
+    "python312@latest",
+    "SDL2@latest",
+    "SDL2_ttf@latest",
+    "SDL2_gfx@latest",
+    "SDL2_sound@latest",
+    "SDL2_mixer@latest",
+    "SDL2_image@latest",
+    "SDL2_image_2_0_5@latest",
+    "libpng@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "python3 -m venv .ven",
+      "source .venv/bin/activate"
+    ],
+    "scripts": {
+      "setup": [
+        "python3 -m venv .ven",
+        "source .venv/bin/activate",
+        "python3 -m pip install -U pygame"
+      ],
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
